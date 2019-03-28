@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+    rel="stylesheet"
+    href="style.css"
+    crossorigin="anonymous"
+  />
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    
+
+    <script
+    src="index.js"
+    crossorigin="anonymous"
+  ></script>
+
+    <title>NBA rezultatų prognozuotojas</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">NBA rezultatų prognozavimo modelis</h1>
+      <p class="lead">
+        Vilniaus Universiteto, Matematikos ir Informatikos fakulteto studento
+        Irmanto Ivanausko bakalaurinio darbo projektas
+      </p>
+    </div>
+
+    <button style="width: 94%; margin-left: 3%;" type="button" class="btn btn-primary">Skaičiuoti tikimybę</button>
+    <p></p>
+
+    <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Šeimininkai</th>
+                <th scope="col">Kriterijus</th>
+                <th scope="col">Svečiai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><select
+                    style="text-align: center; width: 90%"
+                    class="form-control"
+                    id="homeTeamDropdown"
+                  ></td>
+                <td>Komanda</td>
+                <td><select
+                    style="text-align: center; width: 90%"
+                    class="form-control"
+                    id="awayTeamDropdown"
+                  ></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Pergalės</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Pralaimėjimai</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Tarpusavio pergalės</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Pergalės namuose | Pergalės išvykoje</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Pralaimėjimai namuose | Pralaimėjimai išvykoje</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="probability-number">50%</td>
+                <td>PERGALĖS TIKIMYBĖ</td>
+                <td class="probability-number">50%</td>
+               </tr>
+            </tbody>
+          </table>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
